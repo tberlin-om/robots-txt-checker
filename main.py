@@ -26,7 +26,7 @@ def read_expected_robots_txt(file_path):
         return f.read().strip()
 
 def main():
-    url = 'https://timberlin.de/robots.txt'
+    url = 'https://example.de/robots.txt'
     expected_robots_txt = read_expected_robots_txt('expected-robots.txt')
 
     response = requests.get(url)
